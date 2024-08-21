@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5625BBF-9AA9-467D-A625-882F871FDD9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KeywordIndex.WinForms48</RootNamespace>
+    <AssemblyName>KeywordIndex.WinForms48</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseNodeRenderer.cs" />
+    <Compile Include="CharExtensions.cs" />
+    <Compile Include="ClipboardWithMessage.cs" />
+    <Compile Include="HtmlRenderer.cs" />
+    <Compile Include="HtmlRenderer.PaginationRenderer.cs" />
+    <Compile Include="ILinkRenderer.cs" />
+    <Compile Include="IOutlineExporter.cs" />
+    <Compile Include="INodeRenderer.cs" />
+    <Compile Include="IPaginationRenderer.cs" />
+    <Compile Include="MarkdownExporter.cs" />
+    <Compile Include="MarkdownRenderer.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="HistoryComponent.cs" />
+    <Compile Include="DisposableProgress.cs" />
+    <Compile Include="FindPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ICheckBoxSelectionOwner.cs" />
+    <Compile Include="IFileContainer.cs" />
+    <Compile Include="IIndexData.cs" />
+    <Compile Include="IIndexFileComponent.cs" />
+    <Compile Include="IOutlineData.cs" />
+    <Compile Include="IOutlineFileComponent.cs" />
+    <Compile Include="IRangeListContainer.cs" />
+    <Compile Include="IRangeSelectionDestinationProvider.cs" />
+    <Compile Include="MessagePanel.cs" />
+    <Compile Include="IProjectFileComponent.cs" />
+    <Compile Include="JournalText.cs" />
+    <Compile Include="CursorCoordinator.cs" />
+    <Compile Include="DateIndexer.IndexRangeDescriptors.cs" />
+    <Compile Include="DateRegex.cs" />
+    <Compile Include="GlobalErrorHandler.cs" />
+    <Compile Include="IMonthCalendarDecorator.cs" />
+    <Compile Include="IRichTextBoxDecorator.cs" />
+    <Compile Include="ISelectKeyword.cs" />
+    <Compile Include="KeywordIndexContextMenuHandler.cs" />
+    <Compile Include="KeywordIndexer.IndexItemInfo.cs" />
+    <Compile Include="KeywordIndexer.KeywordInfo.cs" />
+    <Compile Include="MessageDialogBuilder.cs" />
+    <Compile Include="FileCommands.cs" />
+    <Compile Include="FileMenu.cs" />
+    <Compile Include="IFile.cs" />
+    <Compile Include="IFileCommands.cs" />
+    <Compile Include="MetadataLinksControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetadataLinksControl.Designer.cs">
+      <DependentUpon>MetadataLinksControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetadataLinksDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetadataLinksDialog.Designer.cs">
+      <DependentUpon>MetadataLinksDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigator.cs" />
+    <Compile Include="HtmlElementExtensions.cs" />
+    <Compile Include="NodeRenderer.cs" />
+    <Compile Include="Outline.Node.cs" />
+    <Compile Include="Outline.NodeActions.cs" />
+    <Compile Include="Indexes.cs" />
+    <Compile Include="OutlineData.cs" />
+    <Compile Include="PageNavigator.cs" />
+    <Compile Include="ProgressManager.cs" />
+    <Compile Include="ProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectForm.designer.cs">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RangeListChangedEventArgs.cs" />
+    <Compile Include="OutlineContextMenuHandler.cs" />
+    <Compile Include="INodeActions.cs" />
+    <Compile Include="WebBrowserContextMenuHandler.cs" />
+    <Compile Include="WebBrowserExtensions.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DictionaryExtensions.cs" />
+    <Compile Include="IWorkspaceContainer.cs" />
+    <Compile Include="JsonHelpers.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="WorkspaceForm.cs" />
+    <Compile Include="Outline.cs" />
+    <Compile Include="Indexer.cs" />
+    <Compile Include="CheckBoxSelection.cs" />
+    <Compile Include="DateIndexer.cs" />
+    <Compile Include="InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndexItemInfo.cs" />
+    <Compile Include="RichTextBoxExtensions.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeywordIndexer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectForm.resx">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Journadex.Library\Journadex.Library.csproj">
+      <Project>{134e77d6-ebe8-4629-99ef-3e7252c38140}</Project>
+      <Name>Journadex.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

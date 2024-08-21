@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journadex.Library", "Journadex.Library\Journadex.Library.csproj", "{134E77D6-EBE8-4629-99EF-3E7252C38140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journadex.Tests", "Journadex.Tests\Journadex.Tests.csproj", "{39F7A8AC-6938-4AD4-ADB6-54A542D97556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeywordIndex.WinForms48", "KeywordIndex.WinForms48\KeywordIndex.WinForms48.csproj", "{F5625BBF-9AA9-467D-A625-882F871FDD9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{134E77D6-EBE8-4629-99EF-3E7252C38140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134E77D6-EBE8-4629-99EF-3E7252C38140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134E77D6-EBE8-4629-99EF-3E7252C38140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134E77D6-EBE8-4629-99EF-3E7252C38140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F7A8AC-6938-4AD4-ADB6-54A542D97556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F7A8AC-6938-4AD4-ADB6-54A542D97556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F7A8AC-6938-4AD4-ADB6-54A542D97556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F7A8AC-6938-4AD4-ADB6-54A542D97556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5625BBF-9AA9-467D-A625-882F871FDD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5625BBF-9AA9-467D-A625-882F871FDD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5625BBF-9AA9-467D-A625-882F871FDD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5625BBF-9AA9-467D-A625-882F871FDD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCC8E8F1-3648-4487-A395-F3EC6442F903}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://armorlightsoftware.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Journadex.Library\\Journadex.Library.csproj
+		SccProjectName1 = Journadex.Library
+		SccLocalPath1 = Journadex.Library
+		SccProjectUniqueName2 = Journadex.Tests\\Journadex.Tests.csproj
+		SccProjectName2 = Journadex.Tests
+		SccLocalPath2 = Journadex.Tests
+		SccProjectUniqueName3 = KeywordIndex.WinForms48\\KeywordIndex.WinForms48.csproj
+		SccProjectName3 = KeywordIndex.WinForms48
+		SccLocalPath3 = KeywordIndex.WinForms48
+	EndGlobalSection
+EndGlobal
